@@ -1,0 +1,168 @@
+2016-08-19 00:07:18,530 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [ContextLoader.java:285] Root WebApplicationContext: initialization started
+2016-08-19 00:07:18,633 INFO [localhost-startStop-1] o.s.w.c.s.XmlWebApplicationContext [AbstractApplicationContext.java:510] Refreshing Root WebApplicationContext: startup date [Fri Aug 19 00:07:18 CEST 2016]; root of context hierarchy
+2016-08-19 00:07:18,692 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/business-config.xml]
+2016-08-19 00:07:18,813 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/persistence-config.xml]
+2016-08-19 00:07:19,563 INFO [localhost-startStop-1] o.s.c.s.PropertySourcesPlaceholderConfigurer [PropertiesLoaderSupport.java:172] Loading properties file from class path resource [spring/data-access.properties]
+2016-08-19 00:07:19,601 INFO [localhost-startStop-1] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:153] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-19 00:07:19,853 INFO [localhost-startStop-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:339] Building JPA container EntityManagerFactory for persistence unit 'wp'
+2016-08-19 00:07:19,896 INFO [localhost-startStop-1] o.h.j.i.u.LogHelper [LogHelper.java:46] HHH000204: Processing PersistenceUnitInfo [
+	name: wp
+	...]
+2016-08-19 00:07:20,122 INFO [localhost-startStop-1] o.h.Version [Version.java:54] HHH000412: Hibernate Core {4.3.10.Final}
+2016-08-19 00:07:20,127 INFO [localhost-startStop-1] o.h.c.Environment [Environment.java:239] HHH000206: hibernate.properties not found
+2016-08-19 00:07:20,130 INFO [localhost-startStop-1] o.h.c.Environment [Environment.java:346] HHH000021: Bytecode provider name : javassist
+2016-08-19 00:07:20,408 INFO [localhost-startStop-1] o.h.a.c.Version [JavaReflectionManager.java:66] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-08-19 00:07:20,863 INFO [localhost-startStop-1] o.h.d.Dialect [Dialect.java:145] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-19 00:07:21,096 INFO [localhost-startStop-1] o.h.h.i.a.ASTQueryTranslatorFactory [ASTQueryTranslatorFactory.java:47] HHH000397: Using ASTQueryTranslatorFactory
+2016-08-19 00:07:21,169 INFO [localhost-startStop-1] o.h.v.i.u.Version [Version.java:27] HV000001: Hibernate Validator 5.1.3.Final
+2016-08-19 00:07:21,826 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:207] HHH000228: Running hbm2ddl schema update
+2016-08-19 00:07:21,826 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:218] HHH000102: Fetching database metadata
+2016-08-19 00:07:21,831 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:230] HHH000396: Updating schema
+2016-08-19 00:07:21,860 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.projects
+2016-08-19 00:07:21,861 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [name]
+2016-08-19 00:07:21,862 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: []
+2016-08-19 00:07:21,862 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [primary]
+2016-08-19 00:07:21,873 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.tags
+2016-08-19 00:07:21,874 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [name]
+2016-08-19 00:07:21,874 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: []
+2016-08-19 00:07:21,875 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [primary]
+2016-08-19 00:07:21,888 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.worklogs
+2016-08-19 00:07:21,889 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [datum, hours, isholiday, description, id, project_name]
+2016-08-19 00:07:21,890 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: [fk_mdrgse09qm8txcxu9aa7hdnnq]
+2016-08-19 00:07:21,890 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [fk_mdrgse09qm8txcxu9aa7hdnnq, primary]
+2016-08-19 00:07:21,902 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.worklogs_tags
+2016-08-19 00:07:21,903 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [worklogs_id, tags_name]
+2016-08-19 00:07:21,903 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: [fk_kxhln3buwe317npxx100kbqpo, fk_hsjws015mkto544y4kt6easup]
+2016-08-19 00:07:21,904 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [fk_kxhln3buwe317npxx100kbqpo, fk_hsjws015mkto544y4kt6easup]
+2016-08-19 00:07:21,905 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:267] HHH000232: Schema update complete
+2016-08-19 00:07:22,314 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [ContextLoader.java:325] Root WebApplicationContext: initialization completed in 3784 ms
+2016-08-19 00:07:22,352 INFO [localhost-startStop-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:485] FrameworkServlet 'dispatcherServlet': initialization started
+2016-08-19 00:07:22,356 INFO [localhost-startStop-1] o.s.w.c.s.XmlWebApplicationContext [AbstractApplicationContext.java:510] Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri Aug 19 00:07:22 CEST 2016]; parent: Root WebApplicationContext
+2016-08-19 00:07:22,357 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/mvc-core-config.xml]
+2016-08-19 00:07:22,398 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/mvc-view-config.xml]
+2016-08-19 00:07:22,540 INFO [localhost-startStop-1] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:153] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-19 00:07:26,778 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/getProjects],methods=[GET]}" onto public java.util.List<java.lang.String> mk.ukim.finki.wp.web.RestWorkLogController.getProjects(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 00:07:26,778 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/getTags],methods=[GET]}" onto public java.util.List<java.lang.String> mk.ukim.finki.wp.web.RestWorkLogController.getTags(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 00:07:26,779 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/getWorkLogs],methods=[GET]}" onto public java.util.List<mk.ukim.finki.wp.model.WorkLog> mk.ukim.finki.wp.web.RestWorkLogController.getWorkLogs(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 00:07:26,780 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/addWorkLog],methods=[POST]}" onto public java.lang.String mk.ukim.finki.wp.web.RestWorkLogController.addWorkLog(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 00:07:26,780 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/deleteAll],methods=[GET]}" onto public java.lang.String mk.ukim.finki.wp.web.RestWorkLogController.deleteAll()
+2016-08-19 00:07:27,132 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:517] Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri Aug 19 00:07:22 CEST 2016]; parent: Root WebApplicationContext
+2016-08-19 00:07:27,192 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:517] Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri Aug 19 00:07:22 CEST 2016]; parent: Root WebApplicationContext
+2016-08-19 00:07:27,275 INFO [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:314] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-08-19 00:07:27,288 INFO [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:301] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-08-19 00:07:27,297 INFO [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:314] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-08-19 00:07:27,327 INFO [localhost-startStop-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:504] FrameworkServlet 'dispatcherServlet': initialization completed in 4974 ms
+2016-08-19 21:21:03,897 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [ContextLoader.java:285] Root WebApplicationContext: initialization started
+2016-08-19 21:21:04,013 INFO [localhost-startStop-1] o.s.w.c.s.XmlWebApplicationContext [AbstractApplicationContext.java:510] Refreshing Root WebApplicationContext: startup date [Fri Aug 19 21:21:04 CEST 2016]; root of context hierarchy
+2016-08-19 21:21:04,072 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/business-config.xml]
+2016-08-19 21:21:04,222 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/persistence-config.xml]
+2016-08-19 21:21:04,823 INFO [localhost-startStop-1] o.s.c.s.PropertySourcesPlaceholderConfigurer [PropertiesLoaderSupport.java:172] Loading properties file from class path resource [spring/data-access.properties]
+2016-08-19 21:21:04,863 INFO [localhost-startStop-1] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:153] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-19 21:21:05,053 INFO [localhost-startStop-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:339] Building JPA container EntityManagerFactory for persistence unit 'wp'
+2016-08-19 21:21:05,077 INFO [localhost-startStop-1] o.h.j.i.u.LogHelper [LogHelper.java:46] HHH000204: Processing PersistenceUnitInfo [
+	name: wp
+	...]
+2016-08-19 21:21:05,267 INFO [localhost-startStop-1] o.h.Version [Version.java:54] HHH000412: Hibernate Core {4.3.10.Final}
+2016-08-19 21:21:05,267 INFO [localhost-startStop-1] o.h.c.Environment [Environment.java:239] HHH000206: hibernate.properties not found
+2016-08-19 21:21:05,277 INFO [localhost-startStop-1] o.h.c.Environment [Environment.java:346] HHH000021: Bytecode provider name : javassist
+2016-08-19 21:21:05,599 INFO [localhost-startStop-1] o.h.a.c.Version [JavaReflectionManager.java:66] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-08-19 21:21:06,099 INFO [localhost-startStop-1] o.h.d.Dialect [Dialect.java:145] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-19 21:21:06,395 INFO [localhost-startStop-1] o.h.h.i.a.ASTQueryTranslatorFactory [ASTQueryTranslatorFactory.java:47] HHH000397: Using ASTQueryTranslatorFactory
+2016-08-19 21:21:06,465 INFO [localhost-startStop-1] o.h.v.i.u.Version [Version.java:27] HV000001: Hibernate Validator 5.1.3.Final
+2016-08-19 21:21:06,947 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:207] HHH000228: Running hbm2ddl schema update
+2016-08-19 21:21:06,947 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:218] HHH000102: Fetching database metadata
+2016-08-19 21:21:06,957 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:230] HHH000396: Updating schema
+2016-08-19 21:21:07,017 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.projects
+2016-08-19 21:21:07,017 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [name]
+2016-08-19 21:21:07,017 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: []
+2016-08-19 21:21:07,017 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [primary]
+2016-08-19 21:21:07,037 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.tags
+2016-08-19 21:21:07,037 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [name]
+2016-08-19 21:21:07,037 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: []
+2016-08-19 21:21:07,037 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [primary]
+2016-08-19 21:21:07,057 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.worklogs
+2016-08-19 21:21:07,057 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [datum, hours, isholiday, description, id, project_name]
+2016-08-19 21:21:07,057 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: [fk_mdrgse09qm8txcxu9aa7hdnnq]
+2016-08-19 21:21:07,067 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [fk_mdrgse09qm8txcxu9aa7hdnnq, primary]
+2016-08-19 21:21:07,077 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.worklogs_tags
+2016-08-19 21:21:07,077 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [worklogs_id, tags_name]
+2016-08-19 21:21:07,077 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: [fk_kxhln3buwe317npxx100kbqpo, fk_hsjws015mkto544y4kt6easup]
+2016-08-19 21:21:07,087 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [fk_kxhln3buwe317npxx100kbqpo, fk_hsjws015mkto544y4kt6easup]
+2016-08-19 21:21:07,087 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:267] HHH000232: Schema update complete
+2016-08-19 21:21:07,397 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [ContextLoader.java:325] Root WebApplicationContext: initialization completed in 3500 ms
+2016-08-19 21:21:07,458 INFO [localhost-startStop-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:485] FrameworkServlet 'dispatcherServlet': initialization started
+2016-08-19 21:21:07,468 INFO [localhost-startStop-1] o.s.w.c.s.XmlWebApplicationContext [AbstractApplicationContext.java:510] Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri Aug 19 21:21:07 CEST 2016]; parent: Root WebApplicationContext
+2016-08-19 21:21:07,468 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/mvc-core-config.xml]
+2016-08-19 21:21:07,519 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/mvc-view-config.xml]
+2016-08-19 21:21:07,671 INFO [localhost-startStop-1] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:153] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-19 21:21:11,927 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> mk.ukim.finki.wp.web.FileUploadController.getFile(java.lang.String)
+2016-08-19 21:21:11,927 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/],methods=[GET]}" onto public java.lang.String mk.ukim.finki.wp.web.FileUploadController.provideUploadInfo(org.springframework.ui.Model) throws java.io.IOException
+2016-08-19 21:21:11,928 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/],methods=[POST]}" onto public java.lang.String mk.ukim.finki.wp.web.FileUploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016-08-19 21:21:11,931 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/getProjects],methods=[GET]}" onto public java.util.List<java.lang.String> mk.ukim.finki.wp.web.RestWorkLogController.getProjects(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 21:21:11,931 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/deleteAll],methods=[GET]}" onto public java.lang.String mk.ukim.finki.wp.web.RestWorkLogController.deleteAll()
+2016-08-19 21:21:11,932 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/getTags],methods=[GET]}" onto public java.util.List<java.lang.String> mk.ukim.finki.wp.web.RestWorkLogController.getTags(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 21:21:11,932 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/getWorkLogs],methods=[GET]}" onto public java.util.List<mk.ukim.finki.wp.model.WorkLog> mk.ukim.finki.wp.web.RestWorkLogController.getWorkLogs(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 21:21:11,933 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/addWorkLog],methods=[POST]}" onto public java.lang.String mk.ukim.finki.wp.web.RestWorkLogController.addWorkLog(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 21:21:12,446 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:517] Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri Aug 19 21:21:07 CEST 2016]; parent: Root WebApplicationContext
+2016-08-19 21:21:12,536 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:517] Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri Aug 19 21:21:07 CEST 2016]; parent: Root WebApplicationContext
+2016-08-19 21:21:12,641 INFO [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:314] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-08-19 21:21:12,656 INFO [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:301] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-08-19 21:21:12,664 INFO [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:314] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-08-19 21:21:12,697 INFO [localhost-startStop-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:504] FrameworkServlet 'dispatcherServlet': initialization completed in 5229 ms
+2016-08-19 21:23:50,132 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [ContextLoader.java:285] Root WebApplicationContext: initialization started
+2016-08-19 21:23:50,207 INFO [localhost-startStop-1] o.s.w.c.s.XmlWebApplicationContext [AbstractApplicationContext.java:510] Refreshing Root WebApplicationContext: startup date [Fri Aug 19 21:23:50 CEST 2016]; root of context hierarchy
+2016-08-19 21:23:50,242 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/business-config.xml]
+2016-08-19 21:23:50,328 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/persistence-config.xml]
+2016-08-19 21:23:50,987 INFO [localhost-startStop-1] o.s.c.s.PropertySourcesPlaceholderConfigurer [PropertiesLoaderSupport.java:172] Loading properties file from class path resource [spring/data-access.properties]
+2016-08-19 21:23:51,013 INFO [localhost-startStop-1] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:153] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-19 21:23:51,285 INFO [localhost-startStop-1] o.s.o.j.LocalContainerEntityManagerFactoryBean [LocalContainerEntityManagerFactoryBean.java:339] Building JPA container EntityManagerFactory for persistence unit 'wp'
+2016-08-19 21:23:51,311 INFO [localhost-startStop-1] o.h.j.i.u.LogHelper [LogHelper.java:46] HHH000204: Processing PersistenceUnitInfo [
+	name: wp
+	...]
+2016-08-19 21:23:51,523 INFO [localhost-startStop-1] o.h.Version [Version.java:54] HHH000412: Hibernate Core {4.3.10.Final}
+2016-08-19 21:23:51,527 INFO [localhost-startStop-1] o.h.c.Environment [Environment.java:239] HHH000206: hibernate.properties not found
+2016-08-19 21:23:51,531 INFO [localhost-startStop-1] o.h.c.Environment [Environment.java:346] HHH000021: Bytecode provider name : javassist
+2016-08-19 21:23:51,801 INFO [localhost-startStop-1] o.h.a.c.Version [JavaReflectionManager.java:66] HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-08-19 21:23:52,496 INFO [localhost-startStop-1] o.h.d.Dialect [Dialect.java:145] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-08-19 21:23:52,779 INFO [localhost-startStop-1] o.h.h.i.a.ASTQueryTranslatorFactory [ASTQueryTranslatorFactory.java:47] HHH000397: Using ASTQueryTranslatorFactory
+2016-08-19 21:23:52,866 INFO [localhost-startStop-1] o.h.v.i.u.Version [Version.java:27] HV000001: Hibernate Validator 5.1.3.Final
+2016-08-19 21:23:53,332 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:207] HHH000228: Running hbm2ddl schema update
+2016-08-19 21:23:53,332 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:218] HHH000102: Fetching database metadata
+2016-08-19 21:23:53,335 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:230] HHH000396: Updating schema
+2016-08-19 21:23:53,357 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.projects
+2016-08-19 21:23:53,358 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [name]
+2016-08-19 21:23:53,358 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: []
+2016-08-19 21:23:53,359 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [primary]
+2016-08-19 21:23:53,367 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.tags
+2016-08-19 21:23:53,368 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [name]
+2016-08-19 21:23:53,369 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: []
+2016-08-19 21:23:53,369 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [primary]
+2016-08-19 21:23:53,382 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.worklogs
+2016-08-19 21:23:53,382 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [datum, hours, isholiday, description, id, project_name]
+2016-08-19 21:23:53,382 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: [fk_mdrgse09qm8txcxu9aa7hdnnq]
+2016-08-19 21:23:53,383 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [fk_mdrgse09qm8txcxu9aa7hdnnq, primary]
+2016-08-19 21:23:53,394 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:65] HHH000261: Table found: wp_project.worklogs_tags
+2016-08-19 21:23:53,394 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:66] HHH000037: Columns: [worklogs_id, tags_name]
+2016-08-19 21:23:53,395 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:68] HHH000108: Foreign keys: [fk_kxhln3buwe317npxx100kbqpo, fk_hsjws015mkto544y4kt6easup]
+2016-08-19 21:23:53,395 INFO [localhost-startStop-1] o.h.t.h.TableMetadata [TableMetadata.java:69] HHH000126: Indexes: [fk_kxhln3buwe317npxx100kbqpo, fk_hsjws015mkto544y4kt6easup]
+2016-08-19 21:23:53,396 INFO [localhost-startStop-1] o.h.t.h.SchemaUpdate [SchemaUpdate.java:267] HHH000232: Schema update complete
+2016-08-19 21:23:53,885 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [ContextLoader.java:325] Root WebApplicationContext: initialization completed in 3750 ms
+2016-08-19 21:23:53,909 INFO [localhost-startStop-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:485] FrameworkServlet 'dispatcherServlet': initialization started
+2016-08-19 21:23:53,912 INFO [localhost-startStop-1] o.s.w.c.s.XmlWebApplicationContext [AbstractApplicationContext.java:510] Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri Aug 19 21:23:53 CEST 2016]; parent: Root WebApplicationContext
+2016-08-19 21:23:53,913 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/mvc-core-config.xml]
+2016-08-19 21:23:53,951 INFO [localhost-startStop-1] o.s.b.f.x.XmlBeanDefinitionReader [XmlBeanDefinitionReader.java:317] Loading XML bean definitions from class path resource [spring/mvc-view-config.xml]
+2016-08-19 21:23:54,082 INFO [localhost-startStop-1] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:153] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-08-19 21:23:57,613 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> mk.ukim.finki.wp.web.FileUploadController.getFile(java.lang.String)
+2016-08-19 21:23:57,614 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/],methods=[GET]}" onto public java.lang.String mk.ukim.finki.wp.web.FileUploadController.provideUploadInfo(org.springframework.ui.Model) throws java.io.IOException
+2016-08-19 21:23:57,614 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/],methods=[POST]}" onto public java.lang.String mk.ukim.finki.wp.web.FileUploadController.handleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2016-08-19 21:23:57,618 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/getTags],methods=[GET]}" onto public java.util.List<java.lang.String> mk.ukim.finki.wp.web.RestWorkLogController.getTags(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 21:23:57,618 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/getProjects],methods=[GET]}" onto public java.util.List<java.lang.String> mk.ukim.finki.wp.web.RestWorkLogController.getProjects(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 21:23:57,619 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/getWorkLogs],methods=[GET]}" onto public java.util.List<mk.ukim.finki.wp.model.WorkLog> mk.ukim.finki.wp.web.RestWorkLogController.getWorkLogs(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 21:23:57,619 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/addWorkLog],methods=[POST]}" onto public java.lang.String mk.ukim.finki.wp.web.RestWorkLogController.addWorkLog(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-19 21:23:57,620 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:217] Mapped "{[/rest/deleteAll],methods=[GET]}" onto public java.lang.String mk.ukim.finki.wp.web.RestWorkLogController.deleteAll()
+2016-08-19 21:23:57,957 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:517] Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri Aug 19 21:23:53 CEST 2016]; parent: Root WebApplicationContext
+2016-08-19 21:23:58,000 INFO [localhost-startStop-1] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:517] Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Fri Aug 19 21:23:53 CEST 2016]; parent: Root WebApplicationContext
+2016-08-19 21:23:58,063 INFO [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:314] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2016-08-19 21:23:58,076 INFO [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:301] Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2016-08-19 21:23:58,085 INFO [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:314] Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-08-19 21:23:58,119 INFO [localhost-startStop-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:504] FrameworkServlet 'dispatcherServlet': initialization completed in 4210 ms
