@@ -70,7 +70,10 @@ public class FileUploadController {
 		//		new Integer(request.getParameter("month")), new Integer(request.getParameter("day")));
 		Date date = new Date(request.getDateHeader("date"));
 		int hours = new Integer(request.getParameter("hours"));
-		boolean isHoliday = new Boolean(request.getParameter("isHoliday"));
+		boolean isHoliday = false;
+		if (request.getParameter("isHoliday") != null){
+			isHoliday = true;
+		};
 		System.out.println(project + " " + date + " " + tags + " " + hours + " " + isHoliday);
 		wls.updateOnRow(project, date, hours, tags, desc, isHoliday);
 		return "createPizza";

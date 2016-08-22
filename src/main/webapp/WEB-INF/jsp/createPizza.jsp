@@ -20,7 +20,7 @@
         <p>Hours</p>
         <input type="number" name="hours"/><br/>
         <p>Holiday</p>
-        <input type="text" name="isHoliday"/><br/>
+        <input type="checkbox" name="isHoliday"/><br/>
         <input type="submit" value="submit"/>
     </form>
 </body>
